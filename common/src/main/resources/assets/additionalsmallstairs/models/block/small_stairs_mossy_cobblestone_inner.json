@@ -1,0 +1,8 @@
+{
+  "parent": "smallstairs:block/inner_smallstairs",
+  "textures": {
+    "bottom": "minecraft:block/mossy_cobblestone",
+    "top": "minecraft:block/mossy_cobblestone",
+    "side": "minecraft:block/mossy_cobblestone"
+  }
+}

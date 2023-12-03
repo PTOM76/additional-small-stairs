@@ -1,0 +1,45 @@
+{
+  "replace": false,
+  "values": [
+    "additionalsmallstairs:small_stairs_cut_copper",
+    "additionalsmallstairs:small_stairs_exposed_cut_copper",
+    "additionalsmallstairs:small_stairs_weathered_cut_copper",
+    "additionalsmallstairs:small_stairs_oxidized_cut_copper",
+    "additionalsmallstairs:small_stairs_waxed_cut_copper",
+    "additionalsmallstairs:small_stairs_waxed_exposed_cut_copper",
+    "additionalsmallstairs:small_stairs_waxed_weathered_cut_copper",
+    "additionalsmallstairs:small_stairs_waxed_oxidized_cut_copper",
+
+    "additionalsmallstairs:small_stairs_mud_bricks",
+    "additionalsmallstairs:small_stairs_cherry_planks",
+    "additionalsmallstairs:small_stairs_bamboo",
+    "additionalsmallstairs:small_stairs_bamboo_mosaic",
+    "additionalsmallstairs:small_stairs_prismarine",
+    "additionalsmallstairs:small_stairs_prismarine_bricks",
+    "additionalsmallstairs:small_stairs_dark_prismarine",
+    "additionalsmallstairs:small_stairs_smooth_sandstone",
+    "additionalsmallstairs:small_stairs_smooth_red_sandstone",
+    "additionalsmallstairs:small_stairs_smooth_quartz",
+    "additionalsmallstairs:small_stairs_smooth_stone",
+    "additionalsmallstairs:small_stairs_mossy_cobblestone",
+    "additionalsmallstairs:small_stairs_mossy_stone_bricks",
+    "additionalsmallstairs:small_stairs_end_stone_bricks",
+
+    "additionalsmallstairs:small_stairs_deepslate",
+    "additionalsmallstairs:small_stairs_deepslate_bricks",
+    "additionalsmallstairs:small_stairs_deepslate_tiles",
+    "additionalsmallstairs:small_stairs_polished_deepslate",
+    "additionalsmallstairs:small_stairs_cobbled_deepslate",
+
+    "additionalsmallstairs:small_stairs_blackstone",
+    "additionalsmallstairs:small_stairs_polished_blackstone",
+    "additionalsmallstairs:small_stairs_polished_blackstone_bricks",
+
+    "additionalsmallstairs:small_stairs_andesite",
+    "additionalsmallstairs:small_stairs_polished_andesite",
+    "additionalsmallstairs:small_stairs_diorite",
+    "additionalsmallstairs:small_stairs_polished_diorite",
+    "additionalsmallstairs:small_stairs_granite",
+    "additionalsmallstairs:small_stairs_polished_granite"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "block.additionalsmallstairs.small_stairs_cut_copper": "切り込み入りの銅の小階段",
+  "block.additionalsmallstairs.small_stairs_exposed_cut_copper": "錆びた切り込み入りの銅の小階段",
+  "block.additionalsmallstairs.small_stairs_weathered_cut_copper": "風化した切り込み入りの銅の小階段",
+  "block.additionalsmallstairs.small_stairs_oxidized_cut_copper": "酸化した切り込み入りの小階段",
+  "block.additionalsmallstairs.small_stairs_waxed_cut_copper": "錆止めされた切り込み入りの銅の小階段",
+  "block.additionalsmallstairs.small_stairs_waxed_exposed_cut_copper": "錆止めされた錆びた切り込み入りの銅の小階段",
+  "block.additionalsmallstairs.small_stairs_waxed_weathered_cut_copper": "錆止めされた風化した切り込み入りの銅の小階段",
+  "block.additionalsmallstairs.small_stairs_waxed_oxidized_cut_copper": "錆止めされた酸化した切り込み入りの銅の小階段",
+
+  "block.additionalsmallstairs.small_stairs_mud_bricks": "泥レンガの小階段",
+  "block.additionalsmallstairs.small_stairs_cherry_planks": "サクラの木の小階段",
+  "block.additionalsmallstairs.small_stairs_bamboo": "竹の小階段",
+  "block.additionalsmallstairs.small_stairs_bamboo_mosaic": "竹細工の小階段",
+  "block.additionalsmallstairs.small_stairs_prismarine": "プリズマリンの小階段",
+  "block.additionalsmallstairs.small_stairs_prismarine_bricks": "プリズマリンレンガの小階段",
+  "block.additionalsmallstairs.small_stairs_dark_prismarine": "ダークプリズマリンの小階段",
+  "block.additionalsmallstairs.small_stairs_smooth_sandstone": "滑らかな砂岩の小階段",
+  "block.additionalsmallstairs.small_stairs_smooth_red_sandstone": "滑らかな赤い砂岩の小階段",
+  "block.additionalsmallstairs.small_stairs_smooth_quartz": "滑らかなクォーツの小階段",
+  "block.additionalsmallstairs.small_stairs_smooth_stone": "滑らかな石の小階段",
+  "block.additionalsmallstairs.small_stairs_mossy_cobblestone": "苔むした丸石の小階段",
+  "block.additionalsmallstairs.small_stairs_mossy_stone_bricks": "苔むした石レンガの小階段",
+  "block.additionalsmallstairs.small_stairs_end_stone_bricks": "エンドストーンレンガの小階段",
+
+  "block.additionalsmallstairs.small_stairs_deepslate": "深層岩の小階段",
+  "block.additionalsmallstairs.small_stairs_deepslate_bricks": "深層岩レンガの小階段",
+  "block.additionalsmallstairs.small_stairs_deepslate_tiles": "深層岩タイルの小階段",
+  "block.additionalsmallstairs.small_stairs_polished_deepslate": "磨かれた深層岩の小階段",
+  "block.additionalsmallstairs.small_stairs_cobbled_deepslate": "深層岩の丸石の小階段",
+
+  "block.additionalsmallstairs.small_stairs_blackstone": "ブラックストーンの小階段",
+  "block.additionalsmallstairs.small_stairs_polished_blackstone": "磨かれたブラックストーンの小階段",
+  "block.additionalsmallstairs.small_stairs_polished_blackstone_bricks": "磨かれたブラックストーンレンガの小階段",
+
+  "block.additionalsmallstairs.small_stairs_andesite": "安山岩の小階段",
+  "block.additionalsmallstairs.small_stairs_diorite": "閃緑岩の小階段",
+  "block.additionalsmallstairs.small_stairs_granite": "花崗岩の小階段",
+  "block.additionalsmallstairs.small_stairs_polished_andesite": "磨かれた安山岩の小階段",
+  "block.additionalsmallstairs.small_stairs_polished_diorite": "磨かれた閃緑岩の小階段",
+  "block.additionalsmallstairs.small_stairs_polished_granite": "磨かれた花崗岩の小階段"
+}
