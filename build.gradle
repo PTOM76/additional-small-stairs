@@ -38,7 +38,7 @@ subprojects {
             curseforge {
                 apiKey = System.getenv("CURSEFORGE_TOKEN")
                 project {
-                    id = '687162'
+                    id = '945609'
                     changelog = ''
                     if (modLoader == "fabric") {
                         releaseType = 'release'
@@ -66,6 +66,7 @@ subprojects {
                             requiredDependency "fabric-api"
                         }
                         requiredDependency 'mcpitanlibarch'
+                        requiredDependency 'smallstairs'
                     }
 
                     mainArtifact(tasks.remapJar)
@@ -80,7 +81,7 @@ subprojects {
         if (System.getenv("MODRINTH_TOKEN") != null) {
             modrinth {
                 token = System.getenv("MODRINTH_TOKEN")
-                projectId = 'PKI5O2ED'
+                projectId = ''
                 versionNumber = project.mod_version + "-" + modLoader
                 gameVersions = ['1.17', '1.17.1', '1.18', '1.18.1', '1.18.2', '1.19', '1.19.1', '1.19.2', '1.19.3', '1.19.4', '1.20', '1.20.1', '1.20.2']
                 versionType = 'release'
@@ -92,6 +93,7 @@ subprojects {
                         required.project "P7dR8mSH" // Fabric API
                     }
                     required.project "uNRoUnGT" // MCPitanLibarch
+                    required.project "PKI502ED" // Small Stairs
                 }
             }
         }

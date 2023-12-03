@@ -23,6 +23,7 @@
   },
   "depends": {
     "fabricloader": "*",
-    "minecraft": ">=1.16"
+    "minecraft": ">=1.16",
+    "smallstairs": "*"
   }
 }
