@@ -4,12 +4,16 @@
   "version": "${version}",
 
   "name": "AdditionalSmallStairs",
-  "description": "",
-  "authors": [],
-  "contact": {},
+  "description": "The mod adds vanilla small stairs. Small Stairs's Addon",
+  "authors": ["Pitan"],
+  "contact": {
+    "website": "https://www.curseforge.com/minecraft/mc-mods/additional-small-stairs",
+    "repo": "https://github.com/PTOM76/additional-small-stairs",
+    "issues": "https://github.com/PTOM76/additional-small-stairs/issue"
+  },
 
   "license": "MIT",
-  "icon": "icon.png",
+  "icon": "assets/additionalsmallstairs/logo.png",
 
   "environment": "*",
   "entrypoints": {
@@ -18,7 +22,7 @@
     ]
   },
   "depends": {
-    "fabricloader": ">=0.15.0",
+    "fabricloader": "*",
     "minecraft": ">=1.16"
   }
 }
