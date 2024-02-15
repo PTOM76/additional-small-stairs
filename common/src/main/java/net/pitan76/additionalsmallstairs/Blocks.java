@@ -1,7 +1,7 @@
 package net.pitan76.additionalsmallstairs;
 
-import ml.pkom.mcpitanlibarch.api.block.CompatibleBlockSettings;
-import ml.pkom.mcpitanlibarch.api.util.BlockUtil;
+import net.pitan76.mcpitanlib.api.block.CompatibleBlockSettings;
+import net.pitan76.mcpitanlib.api.util.BlockUtil;
 import net.minecraft.util.Identifier;
 import net.pitan76.smallstairs.SmallStairBlock;
 

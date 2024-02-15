@@ -58,6 +58,13 @@ ordering="NONE"
 side="BOTH"
 
 [[dependencies.additionalsmallstairs]]
+modId = "mcpitanlib"
+mandatory = true
+versionRange = "[2.0.0,)"
+ordering = "BEFORE"
+side = "BOTH"
+
+[[dependencies.additionalsmallstairs]]
 modId="smallstairs"
 mandatory=true
 versionRange="[1.0.0,)"

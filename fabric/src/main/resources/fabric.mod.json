@@ -23,7 +23,8 @@
   },
   "depends": {
     "fabricloader": "*",
-    "minecraft": ">=1.16",
-    "smallstairs": "*"
+    "minecraft": "*",
+    "smallstairs": "*",
+    "mcpitanlib": ">2.0.0"
   }
 }
