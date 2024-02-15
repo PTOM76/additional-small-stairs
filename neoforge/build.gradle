@@ -25,6 +25,7 @@ dependencies {
     shadowCommon(project(path: ":common", configuration: "transformProductionNeoForge")) { transitive = false }
 
     modApi "net.pitan76:mcpitanlib-neoforge${rootProject.mcpitanlib_version}"
+    modApi "net.pitan76:smallstairs-neoforge:1.1.2"
 }
 
 processResources {
