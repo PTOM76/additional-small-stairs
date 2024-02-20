@@ -144,7 +144,6 @@ allprojects {
 }
 
 task releaseMods {
-
     dependsOn("fabric:modrinth")
     dependsOn("forge:modrinth")
     dependsOn("neoforge:modrinth")
