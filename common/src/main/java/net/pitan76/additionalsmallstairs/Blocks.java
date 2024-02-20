@@ -93,7 +93,7 @@ public class Blocks {
             SMALL_CHERRY_PLANKS_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.CHERRY_PLANKS, CompatibleBlockSettings.copy(net.minecraft.block.Blocks.CHERRY_PLANKS));
         else
             SMALL_CHERRY_PLANKS_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(net.minecraft.block.Blocks.STONE));
-        if (isExist("bamboo"))
+        if (isExist("bamboo_planks"))
             SMALL_BAMBOO_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.BAMBOO_PLANKS, CompatibleBlockSettings.copy(net.minecraft.block.Blocks.BAMBOO_PLANKS));
         else
             SMALL_BAMBOO_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(net.minecraft.block.Blocks.STONE));
