@@ -59,7 +59,7 @@ public class AdditionalSmallStairs
 			RegistryResult<Block> SMALL_CHERRY_PLANKS_STAIRS = registry.registerBlock(id("small_stairs_cherry_planks"), () -> Blocks.SMALL_CHERRY_PLANKS_STAIRS);
 			registry.registerItem(id("small_stairs_cherry_planks"), () -> ItemUtil.ofBlock(SMALL_CHERRY_PLANKS_STAIRS.getOrNull(), new CompatibleItemSettings().addGroup(() -> DefaultItemGroups.BUILDING_BLOCKS, id("small_stairs_cherry_planks"))));
 		}
-		if (isExist("bamboo")) {
+		if (isExist("bamboo_planks")) {
 			RegistryResult<Block> SMALL_BAMBOO_STAIRS = registry.registerBlock(id("small_stairs_bamboo"), () -> Blocks.SMALL_BAMBOO_STAIRS);
 			registry.registerItem(id("small_stairs_bamboo"), () -> ItemUtil.ofBlock(SMALL_BAMBOO_STAIRS.getOrNull(), new CompatibleItemSettings().addGroup(() -> DefaultItemGroups.BUILDING_BLOCKS, id("small_stairs_bamboo"))));
 		}

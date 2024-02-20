@@ -11,10 +11,8 @@
     "repo": "https://github.com/PTOM76/additional-small-stairs",
     "issues": "https://github.com/PTOM76/additional-small-stairs/issue"
   },
-
   "license": "MIT",
   "icon": "assets/additionalsmallstairs/logo.png",
-
   "environment": "*",
   "entrypoints": {
     "main": [
