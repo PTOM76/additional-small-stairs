@@ -2,7 +2,6 @@
   "schemaVersion": 1,
   "id": "additionalsmallstairs",
   "version": "${version}",
-
   "name": "AdditionalSmallStairs",
   "description": "The mod adds vanilla small stairs. Small Stairs's Addon",
   "authors": ["Pitan"],
@@ -11,10 +10,8 @@
     "repo": "https://github.com/PTOM76/additional-small-stairs",
     "issues": "https://github.com/PTOM76/additional-small-stairs/issue"
   },
-
   "license": "MIT",
   "icon": "assets/additionalsmallstairs/logo.png",
-
   "environment": "*",
   "entrypoints": {
     "main": [
