@@ -24,7 +24,6 @@
   "depends": {
     "fabricloader": "*",
     "minecraft": "*",
-    "smallstairs": "*",
     "mcpitanlib": ">2.0.0"
   }
 }
