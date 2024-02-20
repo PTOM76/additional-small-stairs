@@ -148,9 +148,4 @@ task releaseMods {
     dependsOn("fabric:modrinth")
     dependsOn("forge:modrinth")
     dependsOn("neoforge:modrinth")
-
-    dependsOn("fabric:curseforge")
-    dependsOn("forge:curseforge")
-    dependsOn("neoforge:curseforge")
 }
-
