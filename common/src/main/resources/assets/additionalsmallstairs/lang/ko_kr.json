@@ -1,0 +1,42 @@
+{
+  "block.additionalsmallstairs.small_stairs_cut_copper": "코파 절단 작은 계단",
+  "block.additionalsmallstairs.small_stairs_exposed_cut_copper": "노출된 코파 절단 작은 계단",
+  "block.additionalsmallstairs.small_stairs_weathered_cut_copper": "낡은 코파 절단 작은 계단",
+  "block.additionalsmallstairs.small_stairs_oxidized_cut_copper": "산화된 코파 절단 작은 계단",
+  "block.additionalsmallstairs.small_stairs_waxed_cut_copper": "밀폐된 코파 절단 작은 계단",
+  "block.additionalsmallstairs.small_stairs_waxed_exposed_cut_copper": "밀폐된 노출된 코파 절단 작은 계단",
+  "block.additionalsmallstairs.small_stairs_waxed_weathered_cut_copper": "밀폐된 낡은 코파 절단 작은 계단",
+  "block.additionalsmallstairs.small_stairs_waxed_oxidized_cut_copper": "밀폐된 산화된 코파 절단 작은 계단",
+
+  "block.additionalsmallstairs.small_stairs_mud_bricks": "진흙 벽돌 작은 계단",
+  "block.additionalsmallstairs.small_stairs_cherry_planks": "체리 나무 작은 계단",
+  "block.additionalsmallstairs.small_stairs_bamboo": "대나무 작은 계단",
+  "block.additionalsmallstairs.small_stairs_bamboo_mosaic": "대나무 모자이크 작은 계단",
+  "block.additionalsmallstairs.small_stairs_prismarine": "프리즈마린 작은 계단",
+  "block.additionalsmallstairs.small_stairs_prismarine_bricks": "프리즈마린 벽돌 작은 계단",
+  "block.additionalsmallstairs.small_stairs_dark_prismarine": "어두운 프리즈마린 작은 계단",
+  "block.additionalsmallstairs.small_stairs_smooth_sandstone": "매끈한 모래암 작은 계단",
+  "block.additionalsmallstairs.small_stairs_smooth_red_sandstone": "매끈한 빨간 모래암 작은 계단",
+  "block.additionalsmallstairs.small_stairs_smooth_quartz": "매끈한 석영 작은 계단",
+  "block.additionalsmallstairs.small_stairs_smooth_stone": "매끈한 돌 작은 계단",
+  "block.additionalsmallstairs.small_stairs_mossy_cobblestone": "이끼 낀 자갈 작은 계단",
+  "block.additionalsmallstairs.small_stairs_mossy_stone_bricks": "이끼 낀 돌 벽돌 작은 계단",
+  "block.additionalsmallstairs.small_stairs_end_stone_bricks": "엔드 스톤 벽돌 작은 계단",
+
+  "block.additionalsmallstairs.small_stairs_deepslate": "깊은 슬레이트 작은 계단",
+  "block.additionalsmallstairs.small_stairs_deepslate_bricks": "깊은 슬레이트 벽돌 작은 계단",
+  "block.additionalsmallstairs.small_stairs_deepslate_tiles": "깊은 슬레이트 타일 작은 계단",
+  "block.additionalsmallstairs.small_stairs_polished_deepslate": "닦은 깊은 슬레이트 작은 계단",
+  "block.additionalsmallstairs.small_stairs_cobbled_deepslate": "깊은 슬레이트 자갈 작은 계단",
+
+  "block.additionalsmallstairs.small_stairs_blackstone": "블랙스톤 작은 계단",
+  "block.additionalsmallstairs.small_stairs_polished_blackstone": "닦은 블랙스톤 작은 계단",
+  "block.additionalsmallstairs.small_stairs_polished_blackstone_bricks": "닦은 블랙스톤 벽돌 작은 계단",
+
+  "block.additionalsmallstairs.small_stairs_andesite": "안산암 작은 계단",
+  "block.additionalsmallstairs.small_stairs_diorite": "디오라이트 작은 계단",
+  "block.additionalsmallstairs.small_stairs_granite": "화강암 작은 계단",
+  "block.additionalsmallstairs.small_stairs_polished_andesite": "닦은 안산암 작은 계단",
+  "block.additionalsmallstairs.small_stairs_polished_diorite": "닦은 디오라이트 작은 계단",
+  "block.additionalsmallstairs.small_stairs_polished_granite": "닦은 화강암 작은 계단"
+}

@@ -142,3 +142,17 @@ allprojects {
         withSourcesJar()
     }
 }
+
+task releaseMods {
+    doFirst {
+        dependsOn("fabric:modrinth")
+        dependsOn("forge:modrinth")
+        dependsOn("neoforge:modrinth")
+    }
+    doLast {
+        dependsOn("fabric:curseforge")
+        dependsOn("forge:curseforge")
+        dependsOn("neoforge:curseforge")
+    }
+}
+

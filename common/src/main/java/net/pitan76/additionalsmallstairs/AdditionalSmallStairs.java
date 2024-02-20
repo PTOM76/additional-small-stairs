@@ -15,7 +15,7 @@ public class AdditionalSmallStairs
 	public static final String MOD_ID = "additionalsmallstairs";
 	public static final String MOD_NAME = "Additional Small Stairs";
 
-	public static CompatRegistry registry = new CompatRegistry(MOD_ID);
+	public static CompatRegistry registry = CompatRegistry.createRegistry(MOD_ID);
 
 	public static void init() {
 		if (isExist("cut_copper")) {
@@ -166,10 +166,6 @@ public class AdditionalSmallStairs
 			RegistryResult<Block> SMALL_POLISHED_GRANITE_STAIRS = registry.registerBlock(id("small_stairs_polished_granite"), () -> Blocks.SMALL_POLISHED_GRANITE_STAIRS);
 			registry.registerItem(id("small_stairs_polished_granite"), () -> ItemUtil.ofBlock(SMALL_POLISHED_GRANITE_STAIRS.getOrNull(), new CompatibleItemSettings().addGroup(() -> DefaultItemGroups.BUILDING_BLOCKS, id("small_stairs_polished_granite"))));
 		}
-
-
-
-
 
 		registry.allRegister();
 	}

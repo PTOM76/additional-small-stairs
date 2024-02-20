@@ -1,0 +1,42 @@
+{
+  "block.additionalsmallstairs.small_stairs_cut_copper": "切割铜小楼梯",
+  "block.additionalsmallstairs.small_stairs_exposed_cut_copper": "暴露的切割铜小楼梯",
+  "block.additionalsmallstairs.small_stairs_weathered_cut_copper": "风化的切割铜小楼梯",
+  "block.additionalsmallstairs.small_stairs_oxidized_cut_copper": "氧化的切割铜小楼梯",
+  "block.additionalsmallstairs.small_stairs_waxed_cut_copper": "打蜡的切割铜小楼梯",
+  "block.additionalsmallstairs.small_stairs_waxed_exposed_cut_copper": "打蜡的暴露的切割铜小楼梯",
+  "block.additionalsmallstairs.small_stairs_waxed_weathered_cut_copper": "打蜡的风化的切割铜小楼梯",
+  "block.additionalsmallstairs.small_stairs_waxed_oxidized_cut_copper": "打蜡的氧化的切割铜小楼梯",
+
+  "block.additionalsmallstairs.small_stairs_mud_bricks": "泥砖小楼梯",
+  "block.additionalsmallstairs.small_stairs_cherry_planks": "樱桃木小楼梯",
+  "block.additionalsmallstairs.small_stairs_bamboo": "竹小楼梯",
+  "block.additionalsmallstairs.small_stairs_bamboo_mosaic": "竹镶嵌小楼梯",
+  "block.additionalsmallstairs.small_stairs_prismarine": "海晶石小楼梯",
+  "block.additionalsmallstairs.small_stairs_prismarine_bricks": "海晶石砖小楼梯",
+  "block.additionalsmallstairs.small_stairs_dark_prismarine": "暗海晶石小楼梯",
+  "block.additionalsmallstairs.small_stairs_smooth_sandstone": "光滑砂岩小楼梯",
+  "block.additionalsmallstairs.small_stairs_smooth_red_sandstone": "光滑红砂岩小楼梯",
+  "block.additionalsmallstairs.small_stairs_smooth_quartz": "光滑石英小楼梯",
+  "block.additionalsmallstairs.small_stairs_smooth_stone": "光滑石头小楼梯",
+  "block.additionalsmallstairs.small_stairs_mossy_cobblestone": "苔石小楼梯",
+  "block.additionalsmallstairs.small_stairs_mossy_stone_bricks": "苔石砖小楼梯",
+  "block.additionalsmallstairs.small_stairs_end_stone_bricks": "末地石砖小楼梯",
+
+  "block.additionalsmallstairs.small_stairs_deepslate": "深板岩小楼梯",
+  "block.additionalsmallstairs.small_stairs_deepslate_bricks": "深板岩砖小楼梯",
+  "block.additionalsmallstairs.small_stairs_deepslate_tiles": "深板岩瓦小楼梯",
+  "block.additionalsmallstairs.small_stairs_polished_deepslate": "平滑深板岩小楼梯",
+  "block.additionalsmallstairs.small_stairs_cobbled_deepslate": "深板岩圆石小楼梯",
+
+  "block.additionalsmallstairs.small_stairs_blackstone": "黑石小楼梯",
+  "block.additionalsmallstairs.small_stairs_polished_blackstone": "平滑黑石小楼梯",
+  "block.additionalsmallstairs.small_stairs_polished_blackstone_bricks": "平滑黑石砖小楼梯",
+
+  "block.additionalsmallstairs.small_stairs_andesite": "安山岩小楼梯",
+  "block.additionalsmallstairs.small_stairs_diorite": "闪长岩小楼梯",
+  "block.additionalsmallstairs.small_stairs_granite": "花岗岩小楼梯",
+  "block.additionalsmallstairs.small_stairs_polished_andesite": "平滑安山岩小楼梯",
+  "block.additionalsmallstairs.small_stairs_polished_diorite": "平滑闪长岩小楼梯",
+  "block.additionalsmallstairs.small_stairs_polished_granite": "平滑花岗岩小楼梯"
+}
