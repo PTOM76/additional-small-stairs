@@ -4,6 +4,7 @@ import net.pitan76.mcpitanlib.api.item.CompatibleItemSettings;
 import net.pitan76.mcpitanlib.api.item.DefaultItemGroups;
 import net.pitan76.mcpitanlib.api.registry.CompatRegistry;
 import net.pitan76.mcpitanlib.api.registry.result.RegistryResult;
+import net.pitan76.mcpitanlib.api.util.IdentifierUtil;
 import net.pitan76.mcpitanlib.api.util.ItemUtil;
 import net.minecraft.block.Block;
 import net.minecraft.util.Identifier;
@@ -171,6 +172,6 @@ public class AdditionalSmallStairs
 	}
 
 	public static Identifier id(String id) {
-		return new Identifier(MOD_ID, id);
+		return IdentifierUtil.id(MOD_ID, id);
 	}
 }

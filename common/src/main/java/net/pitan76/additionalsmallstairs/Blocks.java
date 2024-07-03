@@ -2,7 +2,7 @@ package net.pitan76.additionalsmallstairs;
 
 import net.pitan76.mcpitanlib.api.block.CompatibleBlockSettings;
 import net.pitan76.mcpitanlib.api.util.BlockUtil;
-import net.minecraft.util.Identifier;
+import net.pitan76.mcpitanlib.api.util.IdentifierUtil;
 import net.pitan76.smallstairs.SmallStairBlock;
 
 public class Blocks {
@@ -48,7 +48,7 @@ public class Blocks {
     public static SmallStairBlock SMALL_POLISHED_GRANITE_STAIRS;
 
     public static boolean isExist(String id) {
-        return BlockUtil.isExist(new Identifier(id));
+        return BlockUtil.isExist(IdentifierUtil.id(id));
     }
 
     static {
