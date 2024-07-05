@@ -1,0 +1,43 @@
+modLoader = "javafml"
+loaderVersion = "[0,)"
+license = "MIT"
+issueTrackerURL="https://ptms76/AdditionalSmallStairsArc/issues"
+
+[[mods]]
+modId = "additionalsmallstairs"
+version = "${version}"
+displayName="AdditionalSmallStairs"
+logoFile = "icon.png"
+authors = "Pitan"
+description = '''
+
+'''
+
+[[dependencies.additionalsmallstairs]]
+modId = "neoforge"
+mandatory = true
+versionRange = "[0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.additionalsmallstairs]]
+modId = "minecraft"
+type = "required"
+versionRange = "[0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.additionalsmallstairs]]
+modId = "mcpitanlib"
+type = "required"
+versionRange = "[2.0.0,)"
+ordering = "BEFORE"
+side = "BOTH"
+
+[[dependencies.additionalsmallstairs]]
+modId="smallstairs"
+type = "required"
+versionRange="[1.0.0,)"
+ordering="NONE"
+side="BOTH"
+
