@@ -6,6 +6,6 @@ import net.fabricmc.api.ModInitializer;
 public class AdditionalSmallStairsFabric implements ModInitializer {
     @Override
     public void onInitialize() {
-        AdditionalSmallStairs.init();
+        new AdditionalSmallStairs();
     }
 }
