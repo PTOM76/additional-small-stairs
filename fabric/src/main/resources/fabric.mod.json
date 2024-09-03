@@ -2,10 +2,11 @@
   "schemaVersion": 1,
   "id": "additionalsmallstairs",
   "version": "${version}",
-
-  "name": "AdditionalSmallStairs",
+  "name": "Additional Small Stairs",
   "description": "The mod adds vanilla small stairs. Small Stairs's Addon",
-  "authors": ["Pitan"],
+  "authors": [
+    "Pitan"
+  ],
   "contact": {
     "website": "https://www.curseforge.com/minecraft/mc-mods/additional-small-stairs",
     "repo": "https://github.com/PTOM76/additional-small-stairs",

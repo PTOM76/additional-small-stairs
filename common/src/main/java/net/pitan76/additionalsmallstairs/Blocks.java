@@ -5,6 +5,8 @@ import net.pitan76.mcpitanlib.api.util.BlockUtil;
 import net.pitan76.mcpitanlib.api.util.IdentifierUtil;
 import net.pitan76.smallstairs.SmallStairBlock;
 
+import static net.pitan76.additionalsmallstairs.AdditionalSmallStairs.isExist;
+
 public class Blocks {
     public static SmallStairBlock SMALL_CUT_COPPER_STAIRS;
     public static SmallStairBlock SMALL_EXPOSED_CUT_COPPER_STAIRS;
@@ -46,10 +48,6 @@ public class Blocks {
     public static SmallStairBlock SMALL_POLISHED_DIORITE_STAIRS;
     public static SmallStairBlock SMALL_GRANITE_STAIRS;
     public static SmallStairBlock SMALL_POLISHED_GRANITE_STAIRS;
-
-    public static boolean isExist(String id) {
-        return BlockUtil.isExist(IdentifierUtil.id(id));
-    }
 
     static {
         if (isExist("cut_copper"))

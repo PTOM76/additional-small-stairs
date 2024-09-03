@@ -4,10 +4,10 @@ import net.pitan76.mcpitanlib.api.CommonModInitializer;
 import net.pitan76.mcpitanlib.api.item.CompatibleItemSettings;
 import net.pitan76.mcpitanlib.api.item.DefaultItemGroups;
 import net.pitan76.mcpitanlib.api.registry.result.RegistryResult;
+import net.pitan76.mcpitanlib.api.util.BlockUtil;
+import net.pitan76.mcpitanlib.api.util.IdentifierUtil;
 import net.pitan76.mcpitanlib.api.util.ItemUtil;
 import net.minecraft.block.Block;
-
-import static net.pitan76.additionalsmallstairs.Blocks.isExist;
 
 public class AdditionalSmallStairs extends CommonModInitializer {
 
@@ -163,17 +163,19 @@ public class AdditionalSmallStairs extends CommonModInitializer {
 			RegistryResult<Block> SMALL_POLISHED_GRANITE_STAIRS = registry.registerBlock(compatId("small_stairs_polished_granite"), () -> Blocks.SMALL_POLISHED_GRANITE_STAIRS);
 			registry.registerItem(compatId("small_stairs_polished_granite"), () -> ItemUtil.ofBlock(SMALL_POLISHED_GRANITE_STAIRS.getOrNull(), new CompatibleItemSettings().addGroup(() -> DefaultItemGroups.BUILDING_BLOCKS, id("small_stairs_polished_granite"))));
 		}
-
-		registry.allRegister();
 	}
 
 	@Override
 	public String getId() {
-		return "";
+		return MOD_ID;
 	}
 
 	@Override
 	public String getName() {
-		return super.getName();
+		return MOD_NAME;
+	}
+
+	public static boolean isExist(String id) {
+		return BlockUtil.isExist(IdentifierUtil.id(id));
 	}
 }
