@@ -29,7 +29,7 @@ subprojects {
         mappings "net.fabricmc:yarn:${rootProject.yarn_mappings}:v2"
 
         modApi "net.pitan76:mcpitanlib-common${rootProject.mcpitanlib_version}"
-        modApi "net.pitan76:smallstairs-common:1.1.2"
+        modApi "net.pitan76:smallstairs-common:1.1.9"
     }
 
     if (name in "fabric,forge,neoforge".split(",")) {
@@ -40,7 +40,7 @@ subprojects {
                 apiKey = System.getenv("CURSEFORGE_TOKEN")
                 project {
                     id = '945609'
-                    changelog = ''
+                    changelog = rootProject.changelog + "\nMCPitanLib version: " + mcpitanlib_version.split(":")[1]
                     releaseType = 'release'
                     if (modLoader == "fabric") {
                         addGameVersion "Fabric"
@@ -67,6 +67,8 @@ subprojects {
                     if (modLoader != "forge") {
                         addGameVersion '1.21'
                         addGameVersion '1.21.1'
+                        addGameVersion '1.21.2'
+                        addGameVersion '1.21.3'
                     }
                     relations {
                         if (modLoader == "fabric") {
@@ -96,12 +98,12 @@ subprojects {
                 }
 
                 if (modLoader != "forge") {
-                    gameVersions.addAll(['1.21', '1.21.1'])
+                    gameVersions.addAll(['1.21', '1.21.1', '1.21.2', '1.21.3'])
                 }
 
                 versionType = 'release'
                 uploadFile = tasks.remapJar
-                changelog = ''
+                changelog = rootProject.changelog + "\nMCPitanLib version: " + mcpitanlib_version.split(":")[1]
                 loaders = [modLoader]
                 dependencies {
                     if (modLoader == "fabric") {
