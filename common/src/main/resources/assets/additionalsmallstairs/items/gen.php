@@ -1,7 +1,6 @@
 <?php
 foreach (glob('../blockstates/*') as $file) {
-	$file = basename($file);
-	$id = preg_replace('/(.*)\.json/', "$1", $file);
+	$id = preg_replace('/(.*)\.json/', "$1", basename($file));
 $contents = <<<EOD
 {
   "model": {
