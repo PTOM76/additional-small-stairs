@@ -1,6 +1,7 @@
 package net.pitan76.additionalsmallstairs;
 
 import net.pitan76.mcpitanlib.api.block.v2.CompatibleBlockSettings;
+import net.pitan76.mcpitanlib.midohra.block.BlockWrapper;
 import net.pitan76.smallstairs.SmallStairBlock;
 
 import static net.pitan76.additionalsmallstairs.AdditionalSmallStairs._id;
@@ -50,152 +51,152 @@ public class Blocks {
 
     static {
         if (isExist("cut_copper"))
-            SMALL_CUT_COPPER_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.CUT_COPPER, CompatibleBlockSettings.copy(_id("small_stairs_cut_copper"), net.minecraft.block.Blocks.CUT_COPPER));
+            SMALL_CUT_COPPER_STAIRS = new SmallStairBlock(BlockWrapper.of("cut_copper"), CompatibleBlockSettings.copy(_id("small_stairs_cut_copper"), BlockWrapper.of("cut_copper").get()));
         else
-            SMALL_CUT_COPPER_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_cut_copper"), net.minecraft.block.Blocks.STONE));
+            SMALL_CUT_COPPER_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_cut_copper"), BlockWrapper.of("stone").get()));
         if (isExist("exposed_cut_copper"))
-            SMALL_EXPOSED_CUT_COPPER_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.EXPOSED_CUT_COPPER, CompatibleBlockSettings.copy(_id("small_stairs_exposed_cut_copper"), net.minecraft.block.Blocks.EXPOSED_CUT_COPPER));
+            SMALL_EXPOSED_CUT_COPPER_STAIRS = new SmallStairBlock(BlockWrapper.of("exposed_cut_copper"), CompatibleBlockSettings.copy(_id("small_stairs_exposed_cut_copper"), BlockWrapper.of("exposed_cut_copper").get()));
         else
-            SMALL_EXPOSED_CUT_COPPER_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_exposed_cut_copper"), net.minecraft.block.Blocks.STONE));
+            SMALL_EXPOSED_CUT_COPPER_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_exposed_cut_copper"), BlockWrapper.of("stone").get()));
         if (isExist("weathered_cut_copper"))
-            SMALL_WEATHERED_CUT_COPPER_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.WEATHERED_CUT_COPPER, CompatibleBlockSettings.copy(_id("small_stairs_weathered_cut_copper"), net.minecraft.block.Blocks.WEATHERED_CUT_COPPER));
+            SMALL_WEATHERED_CUT_COPPER_STAIRS = new SmallStairBlock(BlockWrapper.of("weathered_cut_copper"), CompatibleBlockSettings.copy(_id("small_stairs_weathered_cut_copper"), BlockWrapper.of("weathered_cut_copper").get()));
         else
-            SMALL_WEATHERED_CUT_COPPER_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_weathered_cut_copper"), net.minecraft.block.Blocks.STONE));
+            SMALL_WEATHERED_CUT_COPPER_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_weathered_cut_copper"), BlockWrapper.of("stone").get()));
         if (isExist("oxidized_cut_copper"))
-            SMALL_OXIDIZED_CUT_COPPER_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.OXIDIZED_CUT_COPPER, CompatibleBlockSettings.copy(_id("small_stairs_oxidized_cut_copper"), net.minecraft.block.Blocks.OXIDIZED_CUT_COPPER));
+            SMALL_OXIDIZED_CUT_COPPER_STAIRS = new SmallStairBlock(BlockWrapper.of("oxidized_cut_copper"), CompatibleBlockSettings.copy(_id("small_stairs_oxidized_cut_copper"), BlockWrapper.of("oxidized_cut_copper").get()));
         else
-            SMALL_OXIDIZED_CUT_COPPER_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_oxidized_cut_copper"), net.minecraft.block.Blocks.STONE));
+            SMALL_OXIDIZED_CUT_COPPER_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_oxidized_cut_copper"), BlockWrapper.of("stone").get()));
         if (isExist("waxed_cut_copper"))
-            SMALL_WAXED_CUT_COPPER_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.WAXED_CUT_COPPER, CompatibleBlockSettings.copy(_id("small_stairs_waxed_cut_copper"), net.minecraft.block.Blocks.WAXED_CUT_COPPER));
+            SMALL_WAXED_CUT_COPPER_STAIRS = new SmallStairBlock(BlockWrapper.of("waxed_cut_copper"), CompatibleBlockSettings.copy(_id("small_stairs_waxed_cut_copper"), BlockWrapper.of("waxed_cut_copper").get()));
         else
-            SMALL_WAXED_CUT_COPPER_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_waxed_cut_copper"), net.minecraft.block.Blocks.STONE));
+            SMALL_WAXED_CUT_COPPER_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_waxed_cut_copper"), BlockWrapper.of("stone").get()));
         if (isExist("waxed_exposed_cut_copper"))
-            SMALL_WAXED_EXPOSED_CUT_COPPER_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.WAXED_EXPOSED_CUT_COPPER, CompatibleBlockSettings.copy(_id("small_stairs_waxed_exposed_cut_copper"), net.minecraft.block.Blocks.WAXED_EXPOSED_CUT_COPPER));
+            SMALL_WAXED_EXPOSED_CUT_COPPER_STAIRS = new SmallStairBlock(BlockWrapper.of("waxed_exposed_cut_copper"), CompatibleBlockSettings.copy(_id("small_stairs_waxed_exposed_cut_copper"), BlockWrapper.of("waxed_exposed_cut_copper").get()));
         else
-            SMALL_WAXED_EXPOSED_CUT_COPPER_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_waxed_exposed_cut_copper"), net.minecraft.block.Blocks.STONE));
+            SMALL_WAXED_EXPOSED_CUT_COPPER_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_waxed_exposed_cut_copper"), BlockWrapper.of("stone").get()));
         if (isExist("waxed_weathered_cut_copper"))
-            SMALL_WAXED_WEATHERED_CUT_COPPER_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.WAXED_WEATHERED_CUT_COPPER, CompatibleBlockSettings.copy(_id("small_stairs_waxed_weathered_cut_copper"), net.minecraft.block.Blocks.WAXED_WEATHERED_CUT_COPPER));
+            SMALL_WAXED_WEATHERED_CUT_COPPER_STAIRS = new SmallStairBlock(BlockWrapper.of("waxed_weathered_cut_copper"), CompatibleBlockSettings.copy(_id("small_stairs_waxed_weathered_cut_copper"), BlockWrapper.of("waxed_weathered_cut_copper").get()));
         else
-            SMALL_WAXED_WEATHERED_CUT_COPPER_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_waxed_weathered_cut_copper"), net.minecraft.block.Blocks.STONE));
+            SMALL_WAXED_WEATHERED_CUT_COPPER_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_waxed_weathered_cut_copper"), BlockWrapper.of("stone").get()));
         if (isExist("waxed_oxidized_cut_copper"))
-            SMALL_WAXED_OXIDIZED_CUT_COPPER_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.WAXED_OXIDIZED_CUT_COPPER, CompatibleBlockSettings.copy(_id("small_stairs_waxed_oxidized_cut_copper"), net.minecraft.block.Blocks.WAXED_OXIDIZED_CUT_COPPER));
+            SMALL_WAXED_OXIDIZED_CUT_COPPER_STAIRS = new SmallStairBlock(BlockWrapper.of("waxed_oxidized_cut_copper"), CompatibleBlockSettings.copy(_id("small_stairs_waxed_oxidized_cut_copper"), BlockWrapper.of("waxed_oxidized_cut_copper").get()));
         else
-            SMALL_WAXED_OXIDIZED_CUT_COPPER_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_waxed_oxidized_cut_copper"), net.minecraft.block.Blocks.STONE));
+            SMALL_WAXED_OXIDIZED_CUT_COPPER_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_waxed_oxidized_cut_copper"), BlockWrapper.of("stone").get()));
 
         if (isExist("mud_bricks"))
-            SMALL_MUD_BRICK_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.MUD_BRICKS, CompatibleBlockSettings.copy(_id("small_stairs_mud_bricks"), net.minecraft.block.Blocks.MUD_BRICKS));
+            SMALL_MUD_BRICK_STAIRS = new SmallStairBlock(BlockWrapper.of("mud_bricks"), CompatibleBlockSettings.copy(_id("small_stairs_mud_bricks"), BlockWrapper.of("mud_bricks").get()));
         else
-            SMALL_MUD_BRICK_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_mud_bricks"), net.minecraft.block.Blocks.STONE));
+            SMALL_MUD_BRICK_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_mud_bricks"), BlockWrapper.of("stone").get()));
         if (isExist("cherry_planks"))
-            SMALL_CHERRY_PLANKS_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.CHERRY_PLANKS, CompatibleBlockSettings.copy(_id("small_stairs_cherry_planks"), net.minecraft.block.Blocks.CHERRY_PLANKS));
+            SMALL_CHERRY_PLANKS_STAIRS = new SmallStairBlock(BlockWrapper.of("cherry_planks"), CompatibleBlockSettings.copy(_id("small_stairs_cherry_planks"), BlockWrapper.of("cherry_planks").get()));
         else
-            SMALL_CHERRY_PLANKS_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_cherry_planks"), net.minecraft.block.Blocks.STONE));
+            SMALL_CHERRY_PLANKS_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_cherry_planks"), BlockWrapper.of("stone").get()));
         if (isExist("bamboo_planks"))
-            SMALL_BAMBOO_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.BAMBOO_PLANKS, CompatibleBlockSettings.copy(_id("small_stairs_bamboo"), net.minecraft.block.Blocks.BAMBOO_PLANKS));
+            SMALL_BAMBOO_STAIRS = new SmallStairBlock(BlockWrapper.of("bamboo_planks"), CompatibleBlockSettings.copy(_id("small_stairs_bamboo"), BlockWrapper.of("bamboo_planks").get()));
         else
-            SMALL_BAMBOO_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_bamboo"), net.minecraft.block.Blocks.STONE));
+            SMALL_BAMBOO_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_bamboo"), BlockWrapper.of("stone").get()));
         if (isExist("bamboo_mosaic"))
-            SMALL_BAMBOO_MOSAIC_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.BAMBOO_MOSAIC, CompatibleBlockSettings.copy(_id("small_stairs_bamboo_mosaic"), net.minecraft.block.Blocks.BAMBOO_MOSAIC));
+            SMALL_BAMBOO_MOSAIC_STAIRS = new SmallStairBlock(BlockWrapper.of("bamboo_mosaic"), CompatibleBlockSettings.copy(_id("small_stairs_bamboo_mosaic"), BlockWrapper.of("bamboo_mosaic").get()));
         else
-            SMALL_BAMBOO_MOSAIC_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_bamboo_mosaic"), net.minecraft.block.Blocks.STONE));
+            SMALL_BAMBOO_MOSAIC_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_bamboo_mosaic"), BlockWrapper.of("stone").get()));
         if (isExist("prismarine"))
-            SMALL_PRISMARINE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.PRISMARINE, CompatibleBlockSettings.copy(_id("small_stairs_prismarine"), net.minecraft.block.Blocks.PRISMARINE));
+            SMALL_PRISMARINE_STAIRS = new SmallStairBlock(BlockWrapper.of("prismarine"), CompatibleBlockSettings.copy(_id("small_stairs_prismarine"), BlockWrapper.of("prismarine").get()));
         else
-            SMALL_PRISMARINE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_prismarine"), net.minecraft.block.Blocks.STONE));
+            SMALL_PRISMARINE_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_prismarine"), BlockWrapper.of("stone").get()));
         if (isExist("prismarine_bricks"))
-            SMALL_PRISMARINE_BRICK_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.PRISMARINE_BRICKS, CompatibleBlockSettings.copy(_id("small_stairs_prismarine_bricks"), net.minecraft.block.Blocks.PRISMARINE_BRICKS));
+            SMALL_PRISMARINE_BRICK_STAIRS = new SmallStairBlock(BlockWrapper.of("prismarine_bricks"), CompatibleBlockSettings.copy(_id("small_stairs_prismarine_bricks"), BlockWrapper.of("prismarine_bricks").get()));
         else
-            SMALL_PRISMARINE_BRICK_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_prismarine_bricks"), net.minecraft.block.Blocks.STONE));
+            SMALL_PRISMARINE_BRICK_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_prismarine_bricks"), BlockWrapper.of("stone").get()));
         if (isExist("dark_prismarine"))
-            SMALL_DARK_PRISMARINE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.DARK_PRISMARINE, CompatibleBlockSettings.copy(_id("small_stairs_dark_prismarine"), net.minecraft.block.Blocks.DARK_PRISMARINE));
+            SMALL_DARK_PRISMARINE_STAIRS = new SmallStairBlock(BlockWrapper.of("dark_prismarine"), CompatibleBlockSettings.copy(_id("small_stairs_dark_prismarine"), BlockWrapper.of("dark_prismarine").get()));
         else
-            SMALL_DARK_PRISMARINE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_dark_prismarine"), net.minecraft.block.Blocks.STONE));
+            SMALL_DARK_PRISMARINE_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_dark_prismarine"), BlockWrapper.of("stone").get()));
         if (isExist("smooth_red_sandstone"))
-            SMALL_SMOOTH_RED_SANDSTONE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.SMOOTH_RED_SANDSTONE, CompatibleBlockSettings.copy(_id("small_stairs_smooth_red_sandstone"), net.minecraft.block.Blocks.SMOOTH_RED_SANDSTONE));
+            SMALL_SMOOTH_RED_SANDSTONE_STAIRS = new SmallStairBlock(BlockWrapper.of("smooth_red_sandstone"), CompatibleBlockSettings.copy(_id("small_stairs_smooth_red_sandstone"), BlockWrapper.of("smooth_red_sandstone").get()));
         else
-            SMALL_SMOOTH_RED_SANDSTONE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_smooth_red_sandstone"), net.minecraft.block.Blocks.STONE));
+            SMALL_SMOOTH_RED_SANDSTONE_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_smooth_red_sandstone"), BlockWrapper.of("stone").get()));
         if (isExist("smooth_sandstone"))
-            SMALL_SMOOTH_SANDSTONE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.SMOOTH_SANDSTONE, CompatibleBlockSettings.copy(_id("small_stairs_smooth_sandstone"), net.minecraft.block.Blocks.SMOOTH_SANDSTONE));
+            SMALL_SMOOTH_SANDSTONE_STAIRS = new SmallStairBlock(BlockWrapper.of("smooth_sandstone"), CompatibleBlockSettings.copy(_id("small_stairs_smooth_sandstone"), BlockWrapper.of("smooth_sandstone").get()));
         else
-            SMALL_SMOOTH_SANDSTONE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_smooth_sandstone"), net.minecraft.block.Blocks.STONE));
+            SMALL_SMOOTH_SANDSTONE_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_smooth_sandstone"), BlockWrapper.of("stone").get()));
         if (isExist("smooth_quartz"))
-            SMALL_SMOOTH_QUARTZ_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.SMOOTH_QUARTZ, CompatibleBlockSettings.copy(_id("small_stairs_smooth_quartz"), net.minecraft.block.Blocks.SMOOTH_QUARTZ));
+            SMALL_SMOOTH_QUARTZ_STAIRS = new SmallStairBlock(BlockWrapper.of("smooth_quartz"), CompatibleBlockSettings.copy(_id("small_stairs_smooth_quartz"), BlockWrapper.of("smooth_quartz").get()));
         else
-            SMALL_SMOOTH_QUARTZ_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_smooth_quartz"), net.minecraft.block.Blocks.STONE));
+            SMALL_SMOOTH_QUARTZ_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_smooth_quartz"), BlockWrapper.of("stone").get()));
         if (isExist("smooth_stone"))
-            SMALL_SMOOTH_STONE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.SMOOTH_STONE, CompatibleBlockSettings.copy(_id("small_stairs_smooth_stone"), net.minecraft.block.Blocks.SMOOTH_STONE));
+            SMALL_SMOOTH_STONE_STAIRS = new SmallStairBlock(BlockWrapper.of("smooth_stone"), CompatibleBlockSettings.copy(_id("small_stairs_smooth_stone"), BlockWrapper.of("smooth_stone").get()));
         else
-            SMALL_SMOOTH_STONE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_smooth_stone"), net.minecraft.block.Blocks.STONE));
+            SMALL_SMOOTH_STONE_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_smooth_stone"), BlockWrapper.of("stone").get()));
         if (isExist("mossy_cobblestone"))
-            SMALL_MOSSY_COBBLESTONE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.MOSSY_COBBLESTONE, CompatibleBlockSettings.copy(_id("small_stairs_mossy_cobblestone"), net.minecraft.block.Blocks.MOSSY_COBBLESTONE));
+            SMALL_MOSSY_COBBLESTONE_STAIRS = new SmallStairBlock(BlockWrapper.of("mossy_cobblestone"), CompatibleBlockSettings.copy(_id("small_stairs_mossy_cobblestone"), BlockWrapper.of("mossy_cobblestone").get()));
         else
-            SMALL_MOSSY_COBBLESTONE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_mossy_cobblestone"), net.minecraft.block.Blocks.STONE));
+            SMALL_MOSSY_COBBLESTONE_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_mossy_cobblestone"), BlockWrapper.of("stone").get()));
         if (isExist("mossy_stone_bricks"))
-            SMALL_MOSSY_STONE_BRICK_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.MOSSY_STONE_BRICKS, CompatibleBlockSettings.copy(_id("small_stairs_mossy_stone_bricks"), net.minecraft.block.Blocks.MOSSY_STONE_BRICKS));
+            SMALL_MOSSY_STONE_BRICK_STAIRS = new SmallStairBlock(BlockWrapper.of("mossy_stone_bricks"), CompatibleBlockSettings.copy(_id("small_stairs_mossy_stone_bricks"), BlockWrapper.of("mossy_stone_bricks").get()));
         else
-            SMALL_MOSSY_STONE_BRICK_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_mossy_stone_bricks"), net.minecraft.block.Blocks.STONE));
+            SMALL_MOSSY_STONE_BRICK_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_mossy_stone_bricks"), BlockWrapper.of("stone").get()));
         if (isExist("end_stone_bricks"))
-            SMALL_END_STONE_BRICK_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.END_STONE_BRICKS, CompatibleBlockSettings.copy(_id("small_stairs_end_stone_bricks"), net.minecraft.block.Blocks.END_STONE_BRICKS));
+            SMALL_END_STONE_BRICK_STAIRS = new SmallStairBlock(BlockWrapper.of("end_stone_bricks"), CompatibleBlockSettings.copy(_id("small_stairs_end_stone_bricks"), BlockWrapper.of("end_stone_bricks").get()));
         else
-            SMALL_END_STONE_BRICK_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_end_stone_bricks"), net.minecraft.block.Blocks.STONE));
+            SMALL_END_STONE_BRICK_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_end_stone_bricks"), BlockWrapper.of("stone").get()));
 
         if (isExist("deepslate"))
-            SMALL_DEEPSLATE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.DEEPSLATE, CompatibleBlockSettings.copy(_id("small_stairs_deepslate"), net.minecraft.block.Blocks.DEEPSLATE));
+            SMALL_DEEPSLATE_STAIRS = new SmallStairBlock(BlockWrapper.of("deepslate"), CompatibleBlockSettings.copy(_id("small_stairs_deepslate"), BlockWrapper.of("deepslate").get()));
         else
-            SMALL_DEEPSLATE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_deepslate"), net.minecraft.block.Blocks.STONE));
+            SMALL_DEEPSLATE_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_deepslate"), BlockWrapper.of("stone").get()));
         if (isExist("deepslate_bricks"))
-            SMALL_DEEPSLATE_BRICK_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.DEEPSLATE_BRICKS, CompatibleBlockSettings.copy(_id("small_stairs_deepslate_bricks"), net.minecraft.block.Blocks.DEEPSLATE_BRICKS));
+            SMALL_DEEPSLATE_BRICK_STAIRS = new SmallStairBlock(BlockWrapper.of("deepslate_bricks"), CompatibleBlockSettings.copy(_id("small_stairs_deepslate_bricks"), BlockWrapper.of("deepslate_bricks").get()));
         else
-            SMALL_DEEPSLATE_BRICK_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_deepslate_bricks"), net.minecraft.block.Blocks.STONE));
+            SMALL_DEEPSLATE_BRICK_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_deepslate_bricks"), BlockWrapper.of("stone").get()));
         if (isExist("deepslate_tiles"))
-            SMALL_DEEPSLATE_TILE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.DEEPSLATE_TILES, CompatibleBlockSettings.copy(_id("small_stairs_deepslate_tiles"), net.minecraft.block.Blocks.DEEPSLATE_TILES));
+            SMALL_DEEPSLATE_TILE_STAIRS = new SmallStairBlock(BlockWrapper.of("deepslate_tiles"), CompatibleBlockSettings.copy(_id("small_stairs_deepslate_tiles"), BlockWrapper.of("deepslate_tiles").get()));
         else
-            SMALL_DEEPSLATE_TILE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_deepslate_tiles"), net.minecraft.block.Blocks.STONE));
+            SMALL_DEEPSLATE_TILE_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_deepslate_tiles"), BlockWrapper.of("stone").get()));
         if (isExist("polished_deepslate"))
-            SMALL_POLISHED_DEEPSLATE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.POLISHED_DEEPSLATE, CompatibleBlockSettings.copy(_id("small_stairs_polished_deepslate"), net.minecraft.block.Blocks.POLISHED_DEEPSLATE));
+            SMALL_POLISHED_DEEPSLATE_STAIRS = new SmallStairBlock(BlockWrapper.of("polished_deepslate"), CompatibleBlockSettings.copy(_id("small_stairs_polished_deepslate"), BlockWrapper.of("polished_deepslate").get()));
         else
-            SMALL_POLISHED_DEEPSLATE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_polished_deepslate"), net.minecraft.block.Blocks.STONE));
+            SMALL_POLISHED_DEEPSLATE_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_polished_deepslate"), BlockWrapper.of("stone").get()));
         if (isExist("cobbled_deepslate"))
-            SMALL_COBBLED_DEEPSLATE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.COBBLED_DEEPSLATE, CompatibleBlockSettings.copy(_id("small_stairs_cobbled_deepslate"), net.minecraft.block.Blocks.COBBLED_DEEPSLATE));
+            SMALL_COBBLED_DEEPSLATE_STAIRS = new SmallStairBlock(BlockWrapper.of("cobbled_deepslate"), CompatibleBlockSettings.copy(_id("small_stairs_cobbled_deepslate"), BlockWrapper.of("cobbled_deepslate").get()));
         else
-            SMALL_COBBLED_DEEPSLATE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_cobbled_deepslate"), net.minecraft.block.Blocks.STONE));
+            SMALL_COBBLED_DEEPSLATE_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_cobbled_deepslate"), BlockWrapper.of("stone").get()));
 
         if (isExist("blackstone"))
-            SMALL_BLACKSTONE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.BLACKSTONE, CompatibleBlockSettings.copy(_id("small_stairs_blackstone"), net.minecraft.block.Blocks.BLACKSTONE));
+            SMALL_BLACKSTONE_STAIRS = new SmallStairBlock(BlockWrapper.of("blackstone"), CompatibleBlockSettings.copy(_id("small_stairs_blackstone"), BlockWrapper.of("blackstone").get()));
         else
-            SMALL_BLACKSTONE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_blackstone"), net.minecraft.block.Blocks.STONE));
+            SMALL_BLACKSTONE_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_blackstone"), BlockWrapper.of("stone").get()));
         if (isExist("polished_blackstone"))
-            SMALL_POLISHED_BLACKSTONE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.POLISHED_BLACKSTONE, CompatibleBlockSettings.copy(_id("small_stairs_polished_blackstone"), net.minecraft.block.Blocks.POLISHED_BLACKSTONE));
+            SMALL_POLISHED_BLACKSTONE_STAIRS = new SmallStairBlock(BlockWrapper.of("polished_blackstone"), CompatibleBlockSettings.copy(_id("small_stairs_polished_blackstone"), BlockWrapper.of("polished_blackstone").get()));
         else
-            SMALL_POLISHED_BLACKSTONE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_polished_blackstone"), net.minecraft.block.Blocks.STONE));
+            SMALL_POLISHED_BLACKSTONE_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_polished_blackstone"), BlockWrapper.of("stone").get()));
         if (isExist("polished_blackstone_bricks"))
-            SMALL_POLISHED_BLACKSTONE_BRICK_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.POLISHED_BLACKSTONE_BRICKS, CompatibleBlockSettings.copy(_id("small_stairs_polished_blackstone_bricks"), net.minecraft.block.Blocks.POLISHED_BLACKSTONE_BRICKS));
+            SMALL_POLISHED_BLACKSTONE_BRICK_STAIRS = new SmallStairBlock(BlockWrapper.of("polished_blackstone_bricks"), CompatibleBlockSettings.copy(_id("small_stairs_polished_blackstone_bricks"), BlockWrapper.of("polished_blackstone_bricks").get()));
         else
-            SMALL_POLISHED_BLACKSTONE_BRICK_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_polished_blackstone_bricks"), net.minecraft.block.Blocks.STONE));
+            SMALL_POLISHED_BLACKSTONE_BRICK_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_polished_blackstone_bricks"), BlockWrapper.of("stone").get()));
         
         if (isExist("andesite"))
-            SMALL_ANDESITE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.ANDESITE, CompatibleBlockSettings.copy(_id("small_stairs_andesite"), net.minecraft.block.Blocks.ANDESITE));
+            SMALL_ANDESITE_STAIRS = new SmallStairBlock(BlockWrapper.of("andesite"), CompatibleBlockSettings.copy(_id("small_stairs_andesite"), BlockWrapper.of("andesite").get()));
         else
-            SMALL_ANDESITE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_andesite"), net.minecraft.block.Blocks.STONE));
+            SMALL_ANDESITE_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_andesite"), BlockWrapper.of("stone").get()));
         if (isExist("polished_andesite"))
-            SMALL_POLISHED_ANDESITE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.POLISHED_ANDESITE, CompatibleBlockSettings.copy(_id("small_stairs_polished_andesite"), net.minecraft.block.Blocks.POLISHED_ANDESITE));
+            SMALL_POLISHED_ANDESITE_STAIRS = new SmallStairBlock(BlockWrapper.of("polished_andesite"), CompatibleBlockSettings.copy(_id("small_stairs_polished_andesite"), BlockWrapper.of("polished_andesite").get()));
         else
-            SMALL_POLISHED_ANDESITE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_polished_andesite"), net.minecraft.block.Blocks.STONE));
+            SMALL_POLISHED_ANDESITE_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_polished_andesite"), BlockWrapper.of("stone").get()));
         if (isExist("diorite"))
-            SMALL_DIORITE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.DIORITE, CompatibleBlockSettings.copy(_id("small_stairs_diorite"), net.minecraft.block.Blocks.DIORITE));
+            SMALL_DIORITE_STAIRS = new SmallStairBlock(BlockWrapper.of("diorite"), CompatibleBlockSettings.copy(_id("small_stairs_diorite"), BlockWrapper.of("diorite").get()));
         else
-            SMALL_DIORITE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_diorite"), net.minecraft.block.Blocks.STONE));
+            SMALL_DIORITE_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_diorite"), BlockWrapper.of("stone").get()));
         if (isExist("polished_diorite"))
-            SMALL_POLISHED_DIORITE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.POLISHED_DIORITE, CompatibleBlockSettings.copy(_id("small_stairs_polished_diorite"), net.minecraft.block.Blocks.POLISHED_DIORITE));
+            SMALL_POLISHED_DIORITE_STAIRS = new SmallStairBlock(BlockWrapper.of("polished_diorite"), CompatibleBlockSettings.copy(_id("small_stairs_polished_diorite"), BlockWrapper.of("polished_diorite").get()));
         else
-            SMALL_POLISHED_DIORITE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_polished_diorite"), net.minecraft.block.Blocks.STONE));
+            SMALL_POLISHED_DIORITE_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_polished_diorite"), BlockWrapper.of("stone").get()));
         if (isExist("granite"))
-            SMALL_GRANITE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.GRANITE, CompatibleBlockSettings.copy(_id("small_stairs_granite"), net.minecraft.block.Blocks.GRANITE));
+            SMALL_GRANITE_STAIRS = new SmallStairBlock(BlockWrapper.of("granite"), CompatibleBlockSettings.copy(_id("small_stairs_granite"), BlockWrapper.of("granite").get()));
         else
-            SMALL_GRANITE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_granite"), net.minecraft.block.Blocks.STONE));
+            SMALL_GRANITE_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_granite"), BlockWrapper.of("stone").get()));
         if (isExist("polished_granite"))
-            SMALL_POLISHED_GRANITE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.POLISHED_GRANITE, CompatibleBlockSettings.copy(_id("small_stairs_polished_granite"), net.minecraft.block.Blocks.POLISHED_GRANITE));
+            SMALL_POLISHED_GRANITE_STAIRS = new SmallStairBlock(BlockWrapper.of("polished_granite"), CompatibleBlockSettings.copy(_id("small_stairs_polished_granite"), BlockWrapper.of("polished_granite").get()));
         else
-            SMALL_POLISHED_GRANITE_STAIRS = new SmallStairBlock(net.minecraft.block.Blocks.STONE, CompatibleBlockSettings.copy(_id("small_stairs_polished_granite"), net.minecraft.block.Blocks.STONE));
+            SMALL_POLISHED_GRANITE_STAIRS = new SmallStairBlock(BlockWrapper.of("stone"), CompatibleBlockSettings.copy(_id("small_stairs_polished_granite"), BlockWrapper.of("stone").get()));
     }
 }

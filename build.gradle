@@ -29,7 +29,7 @@ subprojects {
         mappings "net.fabricmc:yarn:${rootProject.yarn_mappings}:v2"
 
         modApi "net.pitan76:mcpitanlib-common${rootProject.mcpitanlib_version}"
-        modApi "net.pitan76:smallstairs-common:1.2.1"
+        modApi "net.pitan76:smallstairs-common:1.2.2-SNAPSHOT"
     }
 
     if (name in "fabric,forge,neoforge".split(",")) {
