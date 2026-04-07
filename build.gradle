@@ -71,6 +71,14 @@ subprojects {
                         addGameVersion '1.21.3'
                         addGameVersion '1.21.4'
                         addGameVersion '1.21.5'
+                        addGameVersion '1.21.6'
+                        addGameVersion '1.21.7'
+                        addGameVersion '1.21.8'
+                        addGameVersion '1.21.9'
+                        addGameVersion '1.21.10'
+                        addGameVersion '1.21.11'
+                        addGameVersion '26.1'
+                        addGameVersion '26.1.1'
                     }
                     relations {
                         if (modLoader == "fabric") {
@@ -100,7 +108,7 @@ subprojects {
                 }
 
                 if (modLoader != "forge") {
-                    gameVersions.addAll(['1.21', '1.21.1', '1.21.2', '1.21.3', '1.21.4', '1.21.5'])
+                    gameVersions.addAll(['1.21', '1.21.1', '1.21.2', '1.21.3', '1.21.4', '1.21.5', '1.21.6', '1.21.7', '1.21.8', '1.21.9', '1.21.10', '1.21.11', '26.1', '26.1.1'])
                 }
 
                 versionType = 'release'
