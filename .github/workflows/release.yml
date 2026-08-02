@@ -26,14 +26,13 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
+          cache: gradle
 
-      # このリポジトリには gradlew が含まれていないため、Gradle 本体を明示的に用意する
-      - uses: gradle/actions/setup-gradle@v4
-        with:
-          gradle-version: "8.6"
+      - name: Grant execute permission
+        run: chmod +x gradlew
 
       - name: Build
-        run: gradle build --no-daemon
+        run: ./gradlew build --no-daemon
 
       # remapJar の成果物 (dev / sources を除いたもの) を集める
       - name: Collect artifacts
