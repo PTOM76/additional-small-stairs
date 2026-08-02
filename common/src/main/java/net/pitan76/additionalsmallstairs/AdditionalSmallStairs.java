@@ -15,6 +15,8 @@ public class AdditionalSmallStairs extends CommonModInitializer {
 	public static final String MOD_NAME = "Additional Small Stairs";
 
 	public void init() {
+		Blocks.init();
+
 		if (isExist("cut_copper")) {
 			RegistryResult<Block> SMALL_CUT_COPPER_STAIRS = registry.registerBlock(_id("small_stairs_cut_copper"), () -> Blocks.SMALL_CUT_COPPER_STAIRS);
 			registry.registerItem(_id("small_stairs_cut_copper"), () -> ItemUtil.create(SMALL_CUT_COPPER_STAIRS.getOrNull(), CompatibleItemSettings.of(_id("small_stairs_cut_copper")).addGroup(ItemGroups.BUILDING_BLOCKS)));
