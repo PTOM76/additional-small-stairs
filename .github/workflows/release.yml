@@ -91,6 +91,8 @@ jobs:
             http_code=$(curl -sS -o response.json -w "%{http_code}" \
               -X POST "${MODPARKS_URL}/api/v2/projects/${PROJECT_SLUG}/versions" \
               -H "Authorization: Bearer ${MODPARKS_API_KEY}" \
+              -H "User-Agent: AdditionalSmallStairs-Release/1.0 (+https://github.com/${GITHUB_REPOSITORY})" \
+              -H "Accept: application/json" \
               -F "versionNumber=${TAG}-${loader}" \
               -F "mcVersions=${mc_versions}" \
               -F "loaders=${loader}" \

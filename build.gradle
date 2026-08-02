@@ -1,7 +1,8 @@
 plugins {
     id "architectury-plugin" version "3.4-SNAPSHOT"
     id "dev.architectury.loom" version "1.6-SNAPSHOT" apply false
-    id 'com.matthewprenger.cursegradle' version '1.+'
+    // cursegradle は environment タグ (Client/Server) に非対応のため CurseForgeGradle へ移行
+    id "net.darkhax.curseforgegradle" version "1.3.33" apply false
     id "com.modrinth.minotaur" version "2.+"
 }
 
@@ -12,7 +13,7 @@ architectury {
 subprojects {
     apply plugin: "dev.architectury.loom"
     apply plugin: "com.modrinth.minotaur"
-    apply plugin: "com.matthewprenger.cursegradle"
+    apply plugin: "net.darkhax.curseforgegradle"
 
     loom {
         silentMojangMappingsLicense()
@@ -36,69 +37,63 @@ subprojects {
         var modLoader = name
 
         if (System.getenv("CURSEFORGE_TOKEN") != null) {
-            curseforge {
-                apiKey = System.getenv("CURSEFORGE_TOKEN")
-                project {
-                    id = '945609'
-                    changelog = rootProject.changelog + "\nMCPitanLib version: " + mcpitanlib_version.split(":")[1]
-                    releaseType = 'release'
-                    if (modLoader == "fabric") {
-                        addGameVersion "Fabric"
-                    }
-                    if (modLoader == "forge") {
-                        addGameVersion "Forge"
-                    }
-                    if (modLoader == "neoforge") {
-                        addGameVersion "NeoForge"
-                        addGameVersion '1.20.3'
-                        addGameVersion '1.20.4'
-                    } else {
-                        addGameVersion '1.18.1'
-                        addGameVersion '1.18.2'
-                        addGameVersion '1.19'
-                        addGameVersion '1.19.1'
-                        addGameVersion '1.19.2'
-                        addGameVersion '1.20'
-                        addGameVersion '1.20.1'
-                        addGameVersion '1.20.3'
-                        addGameVersion '1.20.4'
-                    }
+            tasks.register('publishCurseForge', net.darkhax.curseforgegradle.TaskPublishCurseForge) {
+                apiToken = System.getenv("CURSEFORGE_TOKEN")
 
-                    if (modLoader != "forge") {
-                        addGameVersion '1.21'
-                        addGameVersion '1.21.1'
-                        addGameVersion '1.21.2'
-                        addGameVersion '1.21.3'
-                        addGameVersion '1.21.4'
-                        addGameVersion '1.21.5'
-                        addGameVersion '1.21.6'
-                        addGameVersion '1.21.7'
-                        addGameVersion '1.21.8'
-                        addGameVersion '1.21.9'
-                        addGameVersion '1.21.10'
-                        addGameVersion '1.21.11'
-                    }
+                def mainFile = upload('945609', tasks.remapJar)
+                mainFile.changelog = rootProject.changelog + "\nMCPitanLib version: " + mcpitanlib_version.split(":")[1]
+                mainFile.releaseType = 'release'
 
-                    if (modLoader == "fabric") {
-                        addGameVersion '26.1'
-                        addGameVersion '26.1.1'
-                    }
+                // 2026-07-15 以降、CurseForge は environment タグの指定を必須としている。
+                // 未指定だと Error Code 1021 で拒否される。
+                mainFile.addEnvironment('Client', 'Server')
 
-                    relations {
-                        if (modLoader == "fabric") {
-                            requiredDependency "fabric-api"
-                        }
-                        requiredDependency 'mcpitanlibarch'
-                        requiredDependency 'small-stairs119'
-                    }
-
-                    mainArtifact(tasks.remapJar)
+                if (modLoader == "fabric") {
+                    mainFile.addModLoader('Fabric')
                 }
-                options {
-                    forgeGradleIntegration = false
+                if (modLoader == "forge") {
+                    mainFile.addModLoader('Forge')
                 }
+                if (modLoader == "neoforge") {
+                    mainFile.addModLoader('NeoForge')
+                    mainFile.addGameVersion('1.20.3')
+                    mainFile.addGameVersion('1.20.4')
+                } else {
+                    mainFile.addGameVersion('1.18.1')
+                    mainFile.addGameVersion('1.18.2')
+                    mainFile.addGameVersion('1.19')
+                    mainFile.addGameVersion('1.19.1')
+                    mainFile.addGameVersion('1.19.2')
+                    mainFile.addGameVersion('1.20')
+                    mainFile.addGameVersion('1.20.1')
+                    mainFile.addGameVersion('1.20.3')
+                    mainFile.addGameVersion('1.20.4')
+                }
+
+                if (modLoader != "forge") {
+                    mainFile.addGameVersion('1.21')
+                    mainFile.addGameVersion('1.21.1')
+                    mainFile.addGameVersion('1.21.2')
+                    mainFile.addGameVersion('1.21.3')
+                    mainFile.addGameVersion('1.21.4')
+                    mainFile.addGameVersion('1.21.5')
+                    mainFile.addGameVersion('1.21.6')
+                    mainFile.addGameVersion('1.21.7')
+                    mainFile.addGameVersion('1.21.8')
+                    mainFile.addGameVersion('1.21.9')
+                    mainFile.addGameVersion('1.21.10')
+                    mainFile.addGameVersion('1.21.11')
+                }
+
+                if (modLoader == "fabric") {
+                    mainFile.addGameVersion('26.1')
+                    mainFile.addGameVersion('26.1.1')
+                    mainFile.addRequirement('fabric-api')
+                }
+
+                mainFile.addRequirement('mcpitanlibarch')
+                mainFile.addRequirement('small-stairs119')
             }
-
         }
 
         if (System.getenv("MODRINTH_TOKEN") != null) {
