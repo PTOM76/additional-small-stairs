@@ -9,6 +9,8 @@ env:
   # ModParks のプロジェクトスラッグ (https://modparks.pitan76.net/projects/<slug>)
   PROJECT_SLUG: additional-small-stairs
   MODPARKS_URL: https://modparks.pitan76.net
+  # jar の archivesBaseName (gradle.properties の archives_base_name)
+  ARCHIVES_BASE_NAME: additionalsmallstairs
 
 jobs:
   release:
@@ -35,11 +37,11 @@ jobs:
 
       # remapJar の成果物 (dev / sources を除いたもの) を集める
       - name: Collect artifacts
-        id: artifacts
         run: |
+          set -euo pipefail
           mkdir -p dist
           for loader in fabric forge neoforge; do
-            jar=$(ls "$loader"/build/libs/*.jar \
+            jar=$(ls "$loader"/build/libs/"$ARCHIVES_BASE_NAME"-"$loader"-*.jar \
               | grep -v -- '-dev\.jar$' \
               | grep -v -- '-dev-shadow\.jar$' \
               | grep -v -- '-sources\.jar$' \
@@ -49,9 +51,8 @@ jobs:
               exit 1
             fi
             cp "$jar" dist/
-            echo "$loader: $(basename "$jar")"
           done
-          ls -1 dist
+          ls -l dist
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
@@ -60,11 +61,10 @@ jobs:
             dist/*.jar
           generate_release_notes: true
 
-      - name: Register to ModParks
+      - name: Register to ModParks (API v2)
         env:
           MODPARKS_API_KEY: ${{ secrets.MODPARKS_API_KEY }}
           TAG: ${{ github.ref_name }}
-          REPO: ${{ github.repository }}
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
@@ -73,36 +73,40 @@ jobs:
           MC_COMMON="1.18,1.18.1,1.18.2,1.19,1.19.1,1.19.2,1.20,1.20.1,1.20.3,1.20.4"
           MC_1_21="1.21,1.21.1,1.21.2,1.21.3,1.21.4,1.21.5,1.21.6,1.21.7,1.21.8,1.21.9,1.21.10,1.21.11"
 
+          CHANGELOG=$(gh release view "$TAG" --json body -q .body || echo "")
+
           register() {
             loader="$1"
             mc_versions="$2"
 
-            file_name=$(basename "$(ls dist/*-"$loader"-*.jar | head -n 1)")
-            file_url="https://github.com/${REPO}/releases/download/${TAG}/${file_name}"
+            jar="dist/${ARCHIVES_BASE_NAME}-${loader}-"*.jar
+            jar=$(ls $jar | head -n 1)
+            sha256=$(sha256sum "$jar" | cut -d' ' -f1)
 
-            echo "Registering ${loader}: ${file_url}"
+            echo "Registering ${loader}: $(basename "$jar") (sha256=${sha256})"
 
+            # v2 はファイルを直接アップロードできる (上限 5MB)。
+            # extractRecipes=true でレシピ/タグ/テクスチャが ModParks 側に展開される。
             # ModParks はバージョン番号の重複を許さないため、ローダー名を付与して分離する
-            http_code=$(curl -sS -o /tmp/resp.json -w "%{http_code}" \
-              -X POST "${MODPARKS_URL}/api/v1/projects/${PROJECT_SLUG}/versions" \
+            http_code=$(curl -sS -o response.json -w "%{http_code}" \
+              -X POST "${MODPARKS_URL}/api/v2/projects/${PROJECT_SLUG}/versions" \
               -H "Authorization: Bearer ${MODPARKS_API_KEY}" \
               -F "versionNumber=${TAG}-${loader}" \
               -F "mcVersions=${mc_versions}" \
               -F "loaders=${loader}" \
+              -F "releaseChannel=release" \
               -F "changelog=${CHANGELOG}" \
-              -F "fileName=${file_name}" \
-              -F "fileUrl=${file_url}")
+              -F "fileSha256=${sha256}" \
+              -F "extractRecipes=true" \
+              -F "file=@${jar};type=application/java-archive")
 
-            cat /tmp/resp.json
+            cat response.json
             echo
             if [ "$http_code" -ge 300 ]; then
               echo "::error::ModParks registration failed for ${loader} (HTTP ${http_code})"
               return 1
             fi
           }
-
-          CHANGELOG=$(gh release view "$TAG" --json body -q .body || echo "")
-          export CHANGELOG
 
           register fabric   "${MC_COMMON},${MC_1_21},26.1,26.1.1"
           register forge    "${MC_COMMON}"
